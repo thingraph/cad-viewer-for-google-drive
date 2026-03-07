@@ -1,1 +1,49 @@
-To be implemented!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="./iconfont/iconfont2.css" />
+    <title>CAD Viewer for Google Drive™ – View 2D/3D CAD files (DWG, DXF, glTF, GLB, OBJ, FBX, STL)</title>
+    <meta name="description" content="CAD Viewer for Google Drive™ lets you view 2D CAD (DWG, DXF) and 3D models (glTF, GLB, OBJ, FBX, STL) from your Google Drive in the browser. We use Google Drive access only to list and open the files you choose." />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      #app {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid #ccc;
+        border-top-color: #409EFF; /* Element Plus primary color */
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/main.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- <script src="/config.js"></script> -->
+  </body>
+</html>
