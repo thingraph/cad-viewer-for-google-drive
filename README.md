@@ -42,6 +42,9 @@ Install from Google Workspace Marketplace: [CAD Viewer – Google Workspace Mark
 
 CAD Viewer is built on top of the **`@x-viewer/core`** and **`@x-viewer/plugins`** JavaScript SDK — a high-performance WebGL-based 2D and 3D viewer engine for the web.
 
+The 2D DWG/DXF viewer stack is powered by **[cad-viewer](https://github.com/mlightcad/cad-viewer)** (mlightcad), an open-source browser-based DXF/DWG viewer and editor.
+
+
 ### About @x-viewer/core
 
 `@x-viewer/core` is a TypeScript/JavaScript SDK for building CAD and 3D model viewer applications in the browser. It provides:
