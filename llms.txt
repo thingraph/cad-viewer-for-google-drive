@@ -1,11 +1,11 @@
 # CAD Viewer
 
-> CAD Viewer is a free browser-based application for viewing 2D CAD drawings (DWG, DXF) and 3D models (glTF, GLB, OBJ, FBX, STL) directly from Google Drive™. No software installation required. It is built on the @x-viewer/core WebGL SDK, which uses Three.js for high-performance client-side rendering.
+> CAD Viewer is a free browser-based application for viewing 2D CAD drawings (DWG, DXF) and 3D models (glTF, GLB, OBJ, FBX, STL, IFC) directly from Google Drive™. No software installation required. It is built on the @x-viewer/core WebGL SDK, which uses Three.js for high-performance client-side rendering.
 
 ## Application
 
 - [Home](https://cad.thingraph.site/home): Connect Google Drive™ and open CAD files via "Open with"
-- [Open Local File](https://cad.thingraph.site/open): Upload and view local DWG, DXF, glTF, GLB, OBJ, FBX, STL files directly in the browser
+- [Open Local File](https://cad.thingraph.site/open): Upload and view local DWG, DXF, glTF, GLB, OBJ, FBX, STL, IFC files directly in the browser
 - [Example Models](https://cad.thingraph.site/examples): Browse and open example CAD and 3D model files
 - [Install](https://cad.thingraph.site/install): Install CAD Viewer from Google Workspace Marketplace
 - [Support](https://cad.thingraph.site/support): Documentation, FAQ and contact information
@@ -18,11 +18,12 @@
 - **OBJ** — Wavefront Object (3D)
 - **FBX** — Autodesk Filmbox (3D)
 - **STL** — Stereolithography, used in 3D printing (3D)
+- **IFC** — Industry Foundation Classes (open BIM / building models) (3D)
 
 ## Features
 
 - High-performance WebGL-based 2D rendering for DWG/DXF (Three.js, client-side only, no server)
-- 3D model viewer for glTF, GLB, OBJ, FBX, STL with orbit/pan/zoom
+- 3D model viewer for glTF, GLB, OBJ, FBX, STL, IFC with orbit/pan/zoom
 - Layer management: show/hide layers in DWG/DXF drawings
 - Layout switching: switch between model space and paper space in multi-layout DWG/DXF
 - Measurement tools: distance, area, angle, coordinates with object snapping (osnap)
@@ -38,7 +39,7 @@
 CAD Viewer is built on **@x-viewer/core** and **@x-viewer/plugins** — a TypeScript/JavaScript SDK for building CAD and 3D viewer applications in the browser.
 
 - npm: `@x-viewer/core`, `@x-viewer/plugins`
-- Core APIs: `Viewer2d` (DWG/DXF), `Viewer3d` (glTF/OBJ/FBX/STL)
+- Core APIs: `Viewer2d` (DWG/DXF), `Viewer3d` (glTF/OBJ/FBX/STL/IFC)
 - Rendering: WebGL via Three.js
 - Framework: Vue 3
 - SDK examples: https://github.com/thingraph/dwg-viewer-example
