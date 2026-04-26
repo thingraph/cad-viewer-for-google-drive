@@ -1,6 +1,6 @@
 {
   "name": "CAD Viewer",
-  "description": "View 2D CAD (DWG, DXF) and 3D models (glTF, GLB, OBJ, FBX, STL, IFC) directly from Google Drive",
+  "description": "View 2D CAD (DWG, DXF) and 3D models (glTF, GLB, OBJ, FBX, STL, IFC, STP, STEP) directly from Google Drive",
   "version": "1.0.0",
   "icons": {
     "16": "icons/icon-16.png",
@@ -27,6 +27,8 @@
         "model/gltf-binary",
         "model/obj",
         "application/ifc",
+        "application/step",
+        "model/step",
         "application/octet-stream"
       ],
       "extensions": [
@@ -37,7 +39,9 @@
         "obj",
         "fbx",
         "stl",
-        "ifc"
+        "ifc",
+        "stp",
+        "step"
       ]
     }
   ],

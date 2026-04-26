@@ -1,6 +1,6 @@
 # CAD Viewer for Google Drive™
 
-**CAD Viewer** is a free web application that lets you open and view **2D CAD drawings** (DWG, DXF) and **3D models** (glTF, GLB, OBJ, FBX, STL, IFC) directly from **Google Drive™** in the browser — no software installation required.
+**CAD Viewer** is a free web application that lets you open and view **2D CAD drawings** (DWG, DXF) and **3D models** (glTF, GLB, OBJ, FBX, STL, IFC, STP, STEP) directly from **Google Drive™** in the browser — no software installation required.
 
 Live app: [https://cad.thingraph.site/](https://cad.thingraph.site/)
 Install from Google Workspace Marketplace: [CAD Viewer – Google Workspace Marketplace](https://workspace.google.com/marketplace/app/dwg_viewer/641533811831)
@@ -19,13 +19,14 @@ Install from Google Workspace Marketplace: [CAD Viewer – Google Workspace Mark
 | **FBX** | Autodesk Filmbox — common in animation and game pipelines |
 | **STL** | Stereolithography — used in 3D printing and CAD |
 | **IFC** | Industry Foundation Classes — open BIM / building model interchange |
+| **STP / STEP** | ISO 10303 STEP — neutral CAD / 3D exchange |
 
 ---
 
 ## Features
 
 - **High-performance 2D WebGL rendering** — DWG/DXF files are parsed and rendered entirely in the browser using WebGL (Three.js), no server-side conversion needed
-- **Full 3D model viewer** — glTF, GLB, OBJ, FBX, STL, IFC with orbit, pan, zoom
+- **Full 3D model viewer** — glTF, GLB, OBJ, FBX, STL, IFC, STP, STEP with orbit, pan, zoom
 - **Layer management** — show/hide DWG/DXF layers, manage layer visibility
 - **Layout switching** — switch between model space and paper space layouts in multi-layout DWG/DXF files
 - **Measurement tools** — distance, area, angle, coordinate measurements with object snapping (osnap)
@@ -51,7 +52,7 @@ The 2D DWG/DXF viewer stack is powered by **[cad-viewer](https://github.com/mlig
 `@x-viewer/core` is a TypeScript/JavaScript SDK for building CAD and 3D model viewer applications in the browser. It provides:
 
 - **`Viewer2d`** — a WebGL-based 2D viewer for DWG and DXF files, built on Three.js
-- **`Viewer3d`** — a WebGL-based 3D viewer for glTF, GLB, OBJ, FBX, STL, IFC, built on Three.js
+- **`Viewer3d`** — a WebGL-based 3D viewer for glTF, GLB, OBJ, FBX, STL, IFC, STP, STEP, built on Three.js
 
 Key capabilities of the SDK:
 
@@ -81,7 +82,7 @@ await viewer.loadModel({ modelId: 'drawing', src: 'path/to/file.dwg' })
 viewer.goToHomeView()
 ```
 
-### Quick Start — Viewer3d (glTF/GLB/OBJ/FBX/STL/IFC)
+### Quick Start — Viewer3d (glTF/GLB/OBJ/FBX/STL/IFC/STP/STEP)
 
 ```typescript
 import { Viewer3d } from '@x-viewer/core'
@@ -108,7 +109,7 @@ await viewer.loadModel({ modelId: 'model', src: 'path/to/model.glb' })
 
 1. Install **CAD Viewer** from the [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/dwg_viewer/641533811831)
 2. Open [Google Drive™](https://drive.google.com) in your browser
-3. Right-click a DWG, DXF, glTF, GLB, OBJ, FBX, STL, or IFC file
+3. Right-click a DWG, DXF, glTF, GLB, OBJ, FBX, STL, IFC, STP, or STEP file
 4. Choose **Open with → CAD Viewer**
 5. Sign in with Google if prompted — the app only accesses the specific file you open
 6. Use the toolbar to zoom, pan, measure, annotate, or export screenshots
