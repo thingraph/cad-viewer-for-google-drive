@@ -1,6 +1,6 @@
-# CAD Viewer
+# Thingraph CAD Viewer
 
-> CAD Viewer is a free browser-based application for viewing 2D CAD drawings (DWG, DXF) and 3D models (glTF, GLB, OBJ, FBX, STL, IFC, STP, STEP) directly from Google Drive™. No software installation required. It is built on the @x-viewer/core WebGL SDK, which uses Three.js for high-performance client-side rendering.
+> Thingraph CAD Viewer is a free browser-based application for viewing 2D CAD drawings (DWG, DXF) and 3D models (glTF, GLB, OBJ, FBX, STL, IFC, STP, STEP) directly from Google Drive™. No software installation required. It is built on the @x-viewer/core WebGL SDK, which uses Three.js for high-performance client-side rendering.
 
 ## Application
 
