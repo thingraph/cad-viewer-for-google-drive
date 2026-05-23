@@ -8,7 +8,7 @@
 - [Open Local File](https://cad.thingraph.site/open): Upload and view local DWG, DXF, glTF, GLB, OBJ, FBX, STL, IFC, STP, STEP files directly in the browser
 - [Example Models](https://cad.thingraph.site/examples): Browse and open example CAD and 3D model files
 - [Install](https://cad.thingraph.site/install): Install CAD Viewer from Google Workspace Marketplace
-- [Support](https://cad.thingraph.site/support): Documentation, FAQ and contact information
+- [Support](https://cad.thingraph.site/google/cad-viewer-support): Documentation, FAQ and contact information
 
 ## Supported File Formats
 
