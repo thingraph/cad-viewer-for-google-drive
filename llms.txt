@@ -9,6 +9,18 @@
 - [Example Models](https://cad.thingraph.site/examples): Browse and open example CAD and 3D model files
 - [Install](https://cad.thingraph.site/install): Install CAD Viewer from Google Workspace Marketplace
 - [Support](https://cad.thingraph.site/google/cad-viewer-support): Documentation, FAQ and contact information
+- [FAQ](https://cad.thingraph.site/faq/): Static help articles for SEO — Google Drive workflows, supported formats, troubleshooting
+
+## FAQ (help articles)
+
+- [FAQ index](https://cad.thingraph.site/faq/): Hub for all CAD Viewer and DWG Viewer help articles
+- [View DWG online without AutoCAD](https://cad.thingraph.site/faq/view-dwg-online-without-autocad.html): Free browser DWG viewer, no AutoCAD install
+- [Install from Google Workspace Marketplace](https://cad.thingraph.site/faq/install-cad-viewer-google-workspace-marketplace.html): Install DWG Viewer, CAD Viewer, or CAD Editor for Open with. Videos: DWG https://youtu.be/98X66wYMSl4 · CAD https://youtu.be/ICwLJsZOPVU
+- [CAD Viewer vs DWG Viewer vs CAD Editor](https://cad.thingraph.site/faq/cad-viewer-vs-dwg-viewer-vs-cad-editor.html): Which Google Drive app to choose
+- [Is CAD Viewer safe?](https://cad.thingraph.site/faq/is-cad-viewer-safe-are-files-uploaded-to-servers.html): Client-side rendering, no server upload of CAD files
+- [Open with not showing in Google Drive](https://cad.thingraph.site/faq/open-with-not-showing-in-google-drive.html): Troubleshooting missing Open with menu
+- [How to open a DWG file in Google Drive](https://cad.thingraph.site/faq/how-to-open-dwg-in-google-drive.html): Install app, use Open with, view DWG/DXF in browser without AutoCAD. Video: https://youtu.be/98X66wYMSl4
+- [What file formats does CAD Viewer support?](https://cad.thingraph.site/faq/what-formats-does-cad-viewer-support.html): DWG, DXF, glTF, GLB, OBJ, FBX, STL, IFC, STP, STEP, IGS, IGES. Video: https://youtu.be/ICwLJsZOPVU
 
 ## Supported File Formats
 

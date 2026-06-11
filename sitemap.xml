@@ -55,4 +55,52 @@
     <priority>0.4</priority>
   </url>
 
+  <url>
+    <loc>https://cad.thingraph.site/faq/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://cad.thingraph.site/faq/how-to-open-dwg-in-google-drive.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://cad.thingraph.site/faq/what-formats-does-cad-viewer-support.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://cad.thingraph.site/faq/view-dwg-online-without-autocad.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://cad.thingraph.site/faq/install-cad-viewer-google-workspace-marketplace.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://cad.thingraph.site/faq/cad-viewer-vs-dwg-viewer-vs-cad-editor.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://cad.thingraph.site/faq/is-cad-viewer-safe-are-files-uploaded-to-servers.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://cad.thingraph.site/faq/open-with-not-showing-in-google-drive.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

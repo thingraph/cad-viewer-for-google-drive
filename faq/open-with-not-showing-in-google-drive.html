@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAD Viewer Not in Google Drive「Open with」Menu – Fix Guide | Thingraph</title>
+    <meta
+      name="description"
+      content="CAD Viewer or DWG Viewer missing from Google Drive Open with? Fix install, authorization, file type, Workspace admin blocks, and browser pop-ups with this troubleshooting guide."
+    />
+    <meta
+      name="keywords"
+      content="Open with not showing Google Drive, CAD Viewer missing Open with, DWG Viewer not in menu, Google Drive app not listed, install CAD viewer Drive"
+    />
+    <link rel="canonical" href="https://cad.thingraph.site/faq/open-with-not-showing-in-google-drive.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="CAD Viewer" />
+    <meta property="og:title" content="CAD Viewer Not Showing in Google Drive Open with" />
+    <meta
+      property="og:description"
+      content="Troubleshooting when DWG Viewer or CAD Viewer does not appear in Google Drive Open with menu."
+    />
+    <meta property="og:url" content="https://cad.thingraph.site/faq/open-with-not-showing-in-google-drive.html" />
+    <meta property="og:image" content="https://cad.thingraph.site/og-image.png" />
+    <link rel="stylesheet" href="/faq/faq.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why is CAD Viewer not in Google Drive Open with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually the app is not installed from Google Workspace Marketplace, authorization was not completed, you are signed into a different Google account, the file extension is not supported by that app, or your Workspace admin blocked third-party apps. Install from cad.thingraph.site/install, refresh Drive, and verify the file type."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long after install until Open with appears?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Normally immediately after a successful Marketplace install and OAuth consent. If it does not appear, hard-refresh Google Drive (Ctrl+Shift+R) or sign out and back into Drive."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does DWG Viewer appear for PDF or Word files?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. DWG Viewer only appears for DWG and DXF files. CAD Viewer appears for supported 2D and 3D CAD extensions. Use the app that matches your file extension."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="faq-header">
+      <div class="faq-header__inner">
+        <a class="faq-brand" href="/home">
+          <img src="/cube-64.svg" width="32" height="32" alt="" />
+          <span>CAD Viewer</span>
+        </a>
+        <nav aria-label="Main">
+          <ul class="faq-nav">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/examples">Examples</a></li>
+            <li><a href="/install">Install</a></li>
+            <li><a href="/faq/" aria-current="page">FAQ</a></li>
+            <li><a href="/google/cad-viewer-support">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="faq-wrap">
+      <article class="faq-card">
+        <nav class="faq-breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/faq/">FAQ</a></li>
+            <li><span aria-current="page">Open with not showing</span></li>
+          </ol>
+        </nav>
+
+        <p class="faq-eyebrow">Troubleshooting · Google Drive™</p>
+        <h1>CAD Viewer Not Showing in Google Drive「Open with」Menu</h1>
+        <p class="faq-lead">
+          You right-click a DWG or 3D file in <strong>Google Drive™</strong> but <strong>DWG Viewer</strong>,
+          <strong>CAD Viewer</strong>, or <strong>CAD Editor</strong> is missing from <strong>Open with</strong>. This guide
+          walks through the most common causes and fixes — in order from quickest to check.
+        </p>
+
+        <h2>Checklist (try these first)</h2>
+        <ol>
+          <li><strong>Install the app</strong> from <a href="/install">Install</a> or Google Workspace Marketplace — visiting the viewer website alone does not register Open with.</li>
+          <li><strong>Complete Google authorization</strong> — click Allow/Install until Marketplace shows the app as installed.</li>
+          <li><strong>Same Google account</strong> in Drive and during install (check the profile icon in drive.google.com).</li>
+          <li><strong>Correct file extension</strong> — DWG Viewer only lists for <code>.dwg</code> / <code>.dxf</code>; 3D apps need matching 3D extensions.</li>
+          <li><strong>Hard refresh Drive</strong> — Ctrl+Shift+R (Windows/Linux) or Cmd+Shift+R (Mac).</li>
+        </ol>
+
+        <h2>Cause 1: App not installed from Marketplace</h2>
+        <p>
+          <strong>Open with</strong> only lists apps registered through <strong>Google Workspace Marketplace</strong>. Opening
+          cad.thingraph.site in a tab does not add the app to Drive.
+        </p>
+        <p><strong>Fix:</strong></p>
+        <ol>
+          <li>Go to <a href="/faq/install-cad-viewer-google-workspace-marketplace.html">Install guide</a> or <a href="/install">Install</a>.</li>
+          <li>Install <strong>DWG Viewer</strong>, <strong>CAD Viewer</strong>, or <strong>CAD Editor</strong> as needed.</li>
+          <li>Return to Drive and right-click the file again.</li>
+        </ol>
+
+        <h2>Cause 2: Wrong app for file type</h2>
+        <p>Each app only appears for extensions it supports:</p>
+        <ul>
+          <li><strong>DWG Viewer</strong> — <code>.dwg</code>, <code>.dxf</code> only</li>
+          <li><strong>CAD Viewer</strong> — DWG, DXF, glTF, GLB, OBJ, FBX, STL, IFC, STP, STEP, IGS, IGES</li>
+          <li><strong>CAD Editor</strong> — 3D formats only (no DWG/DXF)</li>
+        </ul>
+        <p>
+          A <code>.pdf</code> or <code>.docx</code> will never show CAD Viewer. A <code>.dwg</code> will not show CAD Editor.
+          See <a href="/faq/cad-viewer-vs-dwg-viewer-vs-cad-editor.html">app comparison</a>.
+        </p>
+
+        <h2>Cause 3: Different Google account</h2>
+        <p>
+          You installed with one account but Drive is signed into another (common with multiple Chrome profiles or
+          work/personal switching).
+        </p>
+        <p><strong>Fix:</strong></p>
+        <ul>
+          <li>Check which account is active in Drive (top-right avatar).</li>
+          <li>Install the app while signed into <em>that</em> account, or switch Drive to the account that already installed it.</li>
+          <li>Review installed apps at
+            <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">Google Account permissions</a>.
+          </li>
+        </ul>
+
+        <h2>Cause 4: Incomplete or revoked authorization</h2>
+        <p>If you denied permissions or removed access, Open with may disappear.</p>
+        <p><strong>Fix:</strong></p>
+        <ol>
+          <li>Visit <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">myaccount.google.com/permissions</a>.</li>
+          <li>If Thingraph app is missing, reinstall from <a href="/install">Install</a>.</li>
+          <li>If present but broken, <strong>Remove access</strong>, then reinstall and accept permissions again.</li>
+        </ol>
+
+        <h2>Cause 5: Google Workspace admin restrictions</h2>
+        <p>
+          Company and school Workspace accounts may block unapproved Marketplace apps. Install may fail silently or Open with
+          never lists third-party viewers.
+        </p>
+        <p><strong>Fix:</strong></p>
+        <ul>
+          <li>Ask your IT admin to allow Thingraph CAD Viewer / DWG Viewer in the Admin console.</li>
+          <li>Until approved, use <a href="/dwg-viewer">local DWG Viewer</a> (upload from computer, no Drive).</li>
+        </ul>
+
+        <h2>Cause 6: Browser or Drive UI quirks</h2>
+        <ul>
+          <li>Try another browser (Chrome recommended).</li>
+          <li>Use the <strong>⋮</strong> three-dot menu on the file, not only right-click.</li>
+          <li>Click <strong>Open with</strong> → <strong>Connect more apps</strong> and search for “CAD Viewer” or “DWG Viewer”.</li>
+          <li>Disable ad blockers temporarily on drive.google.com.</li>
+        </ul>
+
+        <h2>Cause 7: Pop-up blocked after selecting Open with</h2>
+        <p>
+          Sometimes the app <em>is</em> in the menu but the viewer tab does not open because the browser blocked a pop-up.
+        </p>
+        <p><strong>Fix:</strong> Allow pop-ups for <code>cad.thingraph.site</code> and <code>accounts.google.com</code>, then try again.</p>
+
+        <h2>Still not working?</h2>
+        <ul>
+          <li>Confirm the file opens locally at <a href="/dwg-viewer">DWG Viewer</a> — rules out a corrupt file.</li>
+          <li>Read <a href="/google/cad-viewer-support">CAD Viewer Support</a> or
+            <a href="/google/dwg-viewer-support">DWG Viewer Support</a>.</li>
+          <li>Email <a href="mailto:thingraph@outlook.com">thingraph@outlook.com</a> with: Google account type (personal/Workspace), file extension, screenshot of Open with menu, and whether Marketplace shows the app as installed.</li>
+        </ul>
+
+        <section class="faq-related">
+          <h2>Related articles</h2>
+          <ul>
+            <li><a href="/faq/install-cad-viewer-google-workspace-marketplace.html">Install from Marketplace</a></li>
+            <li><a href="/faq/how-to-open-dwg-in-google-drive.html">How to open DWG in Google Drive</a></li>
+            <li><a href="/faq/cad-viewer-vs-dwg-viewer-vs-cad-editor.html">Which app to install</a></li>
+            <li><a href="/faq/">All FAQ articles</a></li>
+          </ul>
+        </section>
+      </article>
+    </div>
+
+    <footer class="faq-footer">
+      <nav aria-label="Footer">
+        <a href="/google/cad-viewer-privacy">Privacy</a>
+        <a href="/google/cad-viewer-terms">Terms</a>
+        <a href="/google/cad-viewer-support">Support</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <p>Thingraph · Powered by <a href="https://www.npmjs.com/package/@x-viewer/core" rel="noopener noreferrer">@x-viewer/core</a></p>
+      <p>Google Drive™ is a trademark of Google LLC.</p>
+    </footer>
+  </body>
+</html>

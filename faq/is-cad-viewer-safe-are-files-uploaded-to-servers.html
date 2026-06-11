@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is CAD Viewer Safe? Are Files Uploaded to Servers? | Thingraph Privacy FAQ</title>
+    <meta
+      name="description"
+      content="Thingraph CAD Viewer and DWG Viewer process files locally in your browser. Learn about Google OAuth permissions, drive.file scope, data privacy, and why your DWG files are not uploaded to our servers."
+    />
+    <meta
+      name="keywords"
+      content="CAD Viewer safe, DWG viewer privacy, are CAD files uploaded, Google Drive CAD security, client-side CAD rendering"
+    />
+    <link rel="canonical" href="https://cad.thingraph.site/faq/is-cad-viewer-safe-are-files-uploaded-to-servers.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="CAD Viewer" />
+    <meta property="og:title" content="Is CAD Viewer Safe? Are Files Uploaded to Servers?" />
+    <meta
+      property="og:description"
+      content="Client-side WebGL rendering — your CAD files stay in the browser. Limited Google Drive permissions explained."
+    />
+    <meta property="og:url" content="https://cad.thingraph.site/faq/is-cad-viewer-safe-are-files-uploaded-to-servers.html" />
+    <meta property="og:image" content="https://cad.thingraph.site/og-image.png" />
+    <link rel="stylesheet" href="/faq/faq.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are my CAD files uploaded to Thingraph servers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Thingraph CAD Viewer and DWG Viewer render DWG, DXF, and 3D models entirely in your web browser using WebGL. File content is processed on your device and is not sent to Thingraph servers for storage or conversion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What Google Drive permissions does CAD Viewer need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The app uses OAuth with the drive.file scope, which allows access only to files you explicitly open with the app via Open with. It cannot browse, list, or read your entire Google Drive."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can CAD Viewer modify or delete my Google Drive files?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The viewer apps have read-only access to files you open. They cannot modify, rename, or delete files in Google Drive."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="faq-header">
+      <div class="faq-header__inner">
+        <a class="faq-brand" href="/home">
+          <img src="/cube-64.svg" width="32" height="32" alt="" />
+          <span>CAD Viewer</span>
+        </a>
+        <nav aria-label="Main">
+          <ul class="faq-nav">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/examples">Examples</a></li>
+            <li><a href="/install">Install</a></li>
+            <li><a href="/faq/" aria-current="page">FAQ</a></li>
+            <li><a href="/google/cad-viewer-support">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="faq-wrap">
+      <article class="faq-card">
+        <nav class="faq-breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/faq/">FAQ</a></li>
+            <li><span aria-current="page">Privacy &amp; safety</span></li>
+          </ol>
+        </nav>
+
+        <p class="faq-eyebrow">Privacy · Security</p>
+        <h1>Is CAD Viewer Safe? Are My Files Uploaded to Your Servers?</h1>
+        <p class="faq-lead">
+          A common question from engineering and design teams: when I open a <strong>DWG</strong>, <strong>DXF</strong>, or
+          <strong>3D model</strong> with Thingraph <strong>CAD Viewer</strong> or <strong>DWG Viewer</strong>, where does my
+          data go? This page explains our <strong>client-side architecture</strong>, Google Drive permissions, and what we
+          do — and do not — collect.
+        </p>
+
+        <h2>Short answer</h2>
+        <p class="faq-note">
+          <strong>Your CAD file content is not uploaded to Thingraph servers for viewing.</strong> Rendering happens in your
+          browser on your device using WebGL (@x-viewer/core / Three.js). We do not operate a cloud conversion service that
+          stores your drawings.
+        </p>
+
+        <h2>How client-side rendering works</h2>
+        <ol>
+          <li>You open a file (local upload or Google Drive <strong>Open with</strong>).</li>
+          <li>The file bytes are loaded into <strong>your browser</strong> (from disk or Google’s API).</li>
+          <li>The viewer parses DWG/DXF/3D data and draws with <strong>WebGL on your GPU</strong>.</li>
+          <li>No step sends the full file to a Thingraph backend for processing.</li>
+        </ol>
+        <p>
+          This architecture is the same for 2D DWG/DXF (<code>Viewer2d</code>) and 3D models including IFC and STEP
+          (WebAssembly modules run in-browser).
+        </p>
+
+        <h2>Google Drive: what access do we request?</h2>
+        <p>When you install from Google Workspace Marketplace, the app asks for limited OAuth scopes:</p>
+        <ul>
+          <li>
+            <code>https://www.googleapis.com/auth/drive.file</code> — lets the app read
+            <strong>only files you open with it</strong> (or create through it). It cannot enumerate your Drive or open
+            arbitrary files you did not choose.
+          </li>
+          <li>
+            Install-related scopes so the app appears in <strong>Open with</strong> for supported extensions.
+          </li>
+        </ul>
+        <p>
+          <strong>Read-only for viewing apps:</strong> DWG Viewer and CAD Viewer do not write changes back to Drive. CAD
+          Editor may let you work on a 3D scene in the browser session; saving edited models back to Drive depends on product
+          features — opened Drive files are still not copied to Thingraph servers.
+        </p>
+
+        <h2>What data might leave your browser?</h2>
+        <ul>
+          <li>
+            <strong>Google APIs</strong> — when opening from Drive, your browser talks to Google to download the file you
+            selected. That traffic is between you and Google under Google’s privacy policy.
+          </li>
+          <li>
+            <strong>OAuth tokens</strong> — stored locally in your browser so you do not sign in every time. Tokens identify
+            your session to Google, not file content to Thingraph servers.
+          </li>
+          <li>
+            <strong>Analytics</strong> — we may use privacy-focused analytics (e.g. page views, feature usage counts) on
+            cad.thingraph.site. Analytics do not include your DWG geometry or file names by design. See our
+            <a href="/google/cad-viewer-privacy">Privacy Policy</a>.
+          </li>
+          <li>
+            <strong>CDN libraries</strong> — the app loads JavaScript and WASM (e.g. Three.js, IFC/Open CASCADE runtimes)
+            from our site or CDNs; not your file content.
+          </li>
+        </ul>
+
+        <h2>Local upload (no Google account)</h2>
+        <p>
+          On <a href="/dwg-viewer">DWG Viewer</a> or <a href="/cad-viewer">CAD Viewer</a> local pages, you drag a file from
+          your computer. The file is read with the browser’s File API and never leaves your machine except as rendered pixels
+          on screen. No account required.
+        </p>
+
+        <h2>Enterprise and confidential drawings</h2>
+        <p>Teams handling sensitive IP often prefer client-side viewers because:</p>
+        <ul>
+          <li>No server-side copy of the drawing for basic viewing</li>
+          <li>Restricted Google scope (<code>drive.file</code>) limits blast radius</li>
+          <li>Access can be revoked instantly at
+            <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">Google Account permissions</a>
+          </li>
+        </ul>
+        <p>
+          Your organization may still require its own security review. Official policies:
+          <a href="/google/cad-viewer-privacy">CAD Viewer Privacy</a>,
+          <a href="/google/dwg-viewer-privacy">DWG Viewer Privacy</a>.
+        </p>
+
+        <h2>What we do not do</h2>
+        <ul>
+          <li>Store your DWG/DXF/3D file content on Thingraph servers for viewing</li>
+          <li>Sell your drawings or file lists to third parties</li>
+          <li>Browse your entire Google Drive without you opening a specific file</li>
+          <li>Modify or delete your Drive files from the viewer apps</li>
+        </ul>
+
+        <h2>Revoke access</h2>
+        <p>
+          Remove Thingraph apps at
+          <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">myaccount.google.com/permissions</a>.
+          Clear site data in your browser to remove local tokens. Re-install anytime from
+          <a href="/install">Install</a>.
+        </p>
+
+        <section class="faq-related">
+          <h2>Related articles</h2>
+          <ul>
+            <li><a href="/faq/install-cad-viewer-google-workspace-marketplace.html">Install &amp; permissions</a></li>
+            <li><a href="/faq/how-to-open-dwg-in-google-drive.html">Open DWG from Google Drive</a></li>
+            <li><a href="/google/cad-viewer-privacy">Full Privacy Policy</a></li>
+            <li><a href="/faq/">All FAQ articles</a></li>
+          </ul>
+        </section>
+      </article>
+    </div>
+
+    <footer class="faq-footer">
+      <nav aria-label="Footer">
+        <a href="/google/cad-viewer-privacy">Privacy</a>
+        <a href="/google/cad-viewer-terms">Terms</a>
+        <a href="/google/cad-viewer-support">Support</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <p>Thingraph · Powered by <a href="https://www.npmjs.com/package/@x-viewer/core" rel="noopener noreferrer">@x-viewer/core</a></p>
+      <p>Google Drive™ is a trademark of Google LLC.</p>
+    </footer>
+  </body>
+</html>
