@@ -152,7 +152,7 @@ a:hover {
 }
 
 .faq-breadcrumb li:not(:last-child)::after {
-  content: '›';
+  content: '\203A';
   margin-left: 4px;
   color: var(--text-subtle);
 }
